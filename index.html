@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>ASP.NET vNext</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>ASP.NET vNext</h1>
+					<h3>Introduction</h3>
+					<p>
+						<small>Brought to you by David Rouyer</small>
+					</p>
+				</section>
+
+				<!--section id="transitions">
+					<h2>Transition Styles</h2>
+					<p>
+						You can select from different transitions, like: <br>
+						<a href="?transition=cube#/transitions">Cube</a> -
+						<a href="?transition=page#/transitions">Page</a> -
+						<a href="?transition=concave#/transitions">Concave</a> -
+						<a href="?transition=zoom#/transitions">Zoom</a> -
+						<a href="?transition=linear#/transitions">Linear</a> -
+						<a href="?transition=fade#/transitions">Fade</a> -
+						<a href="?transition=none#/transitions">None</a> -
+						<a href="?#/transitions">Default</a>
+					</p>
+				</section-->
+
+				<section data-background-transition="slide" data-background="#16a085" data-transition="slide">
+					<h2>ASP.NET today</h2>
+					<p class="fragment">Variety of frameworks and technologies : <br/>Web Pages, Web Forms, Web API, MVC, Razor, SignalR, WCF ...</p>
+					<p class="fragment"><a href="http://aspnet.codeplex.com/">Open Source</a></p>
+					<p class="fragment">First class development tools on Windows</a>
+					<p class="fragment">But ...</p>
+					<p class="fragment">New technologies and patterns have emerged</a>
+					<p class="fragment">Certain parts of the stack are binded to the .NET framework</a>
+					<p class="fragment">The full stack requires Windows</p>
+				</section>
+
+				<section data-background-transition="slide" data-background="#4d7e65" data-transition="slide">
+					<h2>The future</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#4d7e65" data-transition="slide">
+					<h2>MVC, Web API, and Web Pages are merged into one framework, called MVC 6.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#4d7e65" data-transition="slide">
+					<h2>Dependency injection is built into the framework.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#4d7e65" data-transition="slide">
+					<h2>vNext is host agnostic. You can host your app in IIS, or self-host in a custom process.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#4d7e65" data-transition="slide">
+					<h2>vNext is open source and cross platform.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#1abc9c" data-transition="slide">
+					<img src="aspnet.png">
+				</section>
+
+				<section data-background-transition="slide" data-background="#1abc9c" data-transition="slide">
+					<h2>MVC 6 has no dependency on System.Web.dll.<br/> The result is a leaner framework, with faster startup time and lower memory consumption.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#1abc9c" data-transition="slide">
+					<h2>MVC 6 can use a subset of the .NET framework.<br/>This subset of the framework is about 11 megabytes in size compared to 200 megabytes for the full framework.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#1abc9c" data-transition="slide">
+					<h2>MVC 6 is composed of a collection of NuGet packages. <br/>Advantages : No unnecessary memory, disk space, loading time, etc.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#1abc9c" data-transition="slide">
+					<h2>Microsoft can deliver updates to the framework on a faster cadence, because each part can be updated independently.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#9b59b6" data-transition="slide">
+					<h2>Deployment features</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#9b59b6" data-transition="slide">
+					<h2>You can run apps side-by-side with different versions of the framework on the same server.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#9b59b6" data-transition="slide">
+					<h2>Your apps are insulated from framework changes on the server.<br/>You can make framework updates for each app on its own schedule.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#3498db" data-transition="slide">
+					<h2>Development features</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#3498db" data-transition="slide">
+					<h2>Takes advantage of the new Open Source .NET compiler codenamed "Roslyn".</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#3498db" data-transition="slide">
+					<h2>You can edit a code file, refresh the browser, and see the changes without rebuilding the project.<br/>You can choose your own editors and tools.</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#3498db" data-transition="slide">
+					<h2>dynamic code compilation enables development scenarios that were not possible before, such as editing code on the server using Visual Studio Online ("Monaco").</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#3498db" data-transition="slide">
+					<h2>Scaffolding</h2>
+				</section>
+
+				<section data-background-transition="slide" data-background="#34495e" data-transition="slide">
+					<h2>... And more to come !</h2>
+				</section>	
+
+				<!--section>
+					<h2>Pretty Code</h2>
+					<pre><code data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section-->
+
+				<!--section>
+					<h2>Intergalactic Interconnections</h2>
+					<p>
+						You can link between slides internally,
+						<a href="#/2/3">like this</a>.
+					</p>
+				</section-->
+
+				<!--section>
+					<section id="fragments">
+						<h2>Fragmented Views</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<ol>
+							<li class="fragment"><code>any type</code></li>
+							<li class="fragment"><em>of view</em></li>
+							<li class="fragment"><strong>fragments</strong></li>
+						</ol>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's a few styles of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment roll-in">roll-in</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-green">highlight-green</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+						<p class="fragment current-visible">current-visible</p>
+						<p class="fragment highlight-current-blue">highlight-current-blue</p>
+					</section>
+				</section-->
+
+				<section>
+					<h1>THE END</h1>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
